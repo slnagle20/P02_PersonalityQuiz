@@ -20,7 +20,7 @@ class ResultsViewController: UIViewController {
     }
     
     func calculatePersonalityResult() {
-        var frequencyOfAnswers: [AnimalType:Int] = [:]
+        var frequencyOfAnswers: [DisneyType:Int] = [:]
         let responseTypes = responses.map { $0.type }
         
         for response in responseTypes {
@@ -29,7 +29,7 @@ class ResultsViewController: UIViewController {
         
         let mostCommonAnswer = frequencyOfAnswers.sorted { $0.1 > $1.1 }.first!.key
         
-        resultAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
+        resultAnswerLabel.text = "You are \(mostCommonAnswer.rawValue)!"
         resultDefinitionLabel.text = mostCommonAnswer.definition
     }
 }

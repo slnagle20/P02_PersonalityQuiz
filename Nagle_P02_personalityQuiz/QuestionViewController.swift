@@ -30,31 +30,31 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var questionProgressView: UIProgressView!
     
     var questions: [Question] = [
-        Question(text: "Which food do you like the most?",
+        Question(text: "Which place is the highest on your bucket list?",
                  type: .single,
                  answers: [
-                    Answer(text: "Steak", type: .dog),
-                    Answer(text: "Fish", type: .cat),
-                    Answer(text: "Carrots", type: .rabbit),
-                    Answer(text: "Corn", type: .turtle)
+                    Answer(text: "Paris", type: .belle),
+                    Answer(text: "Bora Bora", type: .ariel),
+                    Answer(text: "Space", type: .stitch),
+                    Answer(text: "Australia", type: .nemo)
             ]),
         
-        Question(text: "Which activities do you enjoy?",
+        Question(text: "How do you spend your free time?",
                  type: .multiple,
                  answers: [
-                    Answer(text: "Swimming", type: .turtle),
-                    Answer(text: "Sleeping", type: .cat),
-                    Answer(text: "Cuddling", type: .rabbit),
-                    Answer(text: "Eating", type: .dog)
+                    Answer(text: "Hanging with Friends", type: .nemo),
+                    Answer(text: "Exploring", type: .ariel),
+                    Answer(text: "With Music", type: .stitch),
+                    Answer(text: "Reading", type: .belle)
             ]),
         
-        Question(text: "How much do you enjoy car rides?",
+        Question(text: "How much time do you spend getting ready in the morning?",
                  type: .ranged,
                  answers: [
-                    Answer(text: "I dislike them", type: .cat),
-                    Answer(text: "I get a little nervous", type: .rabbit),
-                    Answer(text: "I barely notice them", type: .turtle),
-                    Answer(text: "I love them", type: .dog)
+                    Answer(text: "barely any", type: .nemo),
+                    Answer(text: "Some", type: .belle),
+                    Answer(text: "a little more than most", type: .ariel),
+                    Answer(text: "LOTS", type: .stitch)
             ])
     ]
     var questionIndex = 0

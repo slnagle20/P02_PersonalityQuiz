@@ -12,22 +12,22 @@ enum ResponseType {
 
 struct Answer {
     var text: String
-    var type: AnimalType
+    var type: DisneyType
 }
 
-enum AnimalType: Character {
-    case dog = "🐶", cat = "🐱", rabbit = "🐰", turtle = "🐢"
+enum DisneyType: String  {
+    case belle = "Belle", ariel = "Ariel", stitch = "Stitch", nemo = "Nemo"
     
     var definition: String {
         switch self {
-        case .dog:
-            return "You are incredibly outgoing. You surround yourself with the people you love and enjoy activities with your friends."
-        case .cat:
-            return "Mischievous, yet mild-tempered, you enjoy doing things on your own terms."
-        case .rabbit:
-            return "You love everything that's soft. You are healthy and full of energy."
-        case .turtle:
-            return "You are wise beyond your years, and you focus on the details. Slow and steady wins the race."
+        case .belle:
+            return "You are incredibly outgoing and kind. You are very studious and brave."
+        case .ariel:
+            return "You enjoy doing things on your own terms and can be quite mischevoius. You make your own rules and love looking for new adventures."
+        case .stitch:
+            return "You are full of energy and love trying new things. You would do anything for your ohana."
+        case .nemo:
+            return "You always put your friends before yourself. You never take no for an answer. You always keep trying."
         }
     }
 }
